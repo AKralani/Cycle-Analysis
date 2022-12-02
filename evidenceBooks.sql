@@ -10,7 +10,8 @@ CREATE TABLE `analysisdb`.`evidenceBooks` (
   `quantity` FLOAT NOT NULL,
   `fee` FLOAT NOT NULL,
   `buySell` VARCHAR(255) NOT NULL,
-  `percentProfitLoss` FLOAT NOT NULL,
-  `usdValueProfitLoss` FLOAT NOT NULL,
+  `profitLoss` VARCHAR(255),
+  `percentProfitLoss` FLOAT,
+  `usdValueProfitLoss` FLOAT,
   `snapshot` BLOB,
   PRIMARY KEY (`evidenceBookId`));
